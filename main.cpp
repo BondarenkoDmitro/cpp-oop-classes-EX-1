@@ -8,15 +8,19 @@ public:
     Alpha();
     ~Alpha();
 };
-int Alpha::n=0;
+int Alpha::n = 0;
 
 Alpha::Alpha() {
-    if (n==0) cout<<"First object has been created"<<endl;
+    if (n==0) {
+        cout << "First object has been created" << endl;
+    }
     n++;
 }
 Alpha::~Alpha() {
     n--;
-    if (n==0) cout<<"Last element has been deleted";
+    if (n==0) {
+        cout << "Last element has been deleted" << endl;
+    }
 }
 
 int main() {
